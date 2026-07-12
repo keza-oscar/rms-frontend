@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { PerspectiveCamera, OrbitControls, Sphere, Box } from '@react-three/drei';
-import * as THREE from 'three';
+
 
 function RotatingBox() {
   const meshRef = useRef();
