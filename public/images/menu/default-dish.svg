@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-labelledby="title desc">
+  <title id="title">Midtown restaurant dish</title>
+  <desc id="desc">A stylised plated meal on a dark restaurant table</desc>
+  <defs>
+    <linearGradient id="table" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#28364a"/>
+      <stop offset="1" stop-color="#111923"/>
+    </linearGradient>
+    <radialGradient id="plate">
+      <stop stop-color="#f5e2c4"/>
+      <stop offset=".72" stop-color="#d9b780"/>
+      <stop offset=".73" stop-color="#a87847"/>
+      <stop offset="1" stop-color="#513521"/>
+    </radialGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="13" stdDeviation="12" flood-color="#05080c" flood-opacity=".7"/>
+    </filter>
+  </defs>
+  <rect width="600" height="400" fill="url(#table)"/>
+  <circle cx="300" cy="215" r="150" fill="url(#plate)" filter="url(#shadow)"/>
+  <circle cx="300" cy="215" r="115" fill="#f7ebd6"/>
+  <ellipse cx="305" cy="225" rx="84" ry="54" fill="#c98038"/>
+  <path d="M235 217c12-55 57-80 107-48 26 16 40 47 28 74-16 34-62 42-101 18-28-18-40-30-34-44Z" fill="#9c4826"/>
+  <path d="M250 210c27-26 67-31 103-1M257 230c31-21 69-20 101 3" fill="none" stroke="#e4a45f" stroke-width="8" stroke-linecap="round" opacity=".8"/>
+  <g fill="#4f8b45">
+    <circle cx="223" cy="170" r="20"/><circle cx="244" cy="155" r="17"/><circle cx="218" cy="194" r="17"/>
+  </g>
+  <g fill="#e7bf4f"><rect x="375" y="177" width="18" height="74" rx="8" transform="rotate(23 384 214)"/><rect x="398" y="183" width="18" height="66" rx="8" transform="rotate(37 407 216)"/><rect x="367" y="198" width="18" height="62" rx="8" transform="rotate(8 376 229)"/></g>
+  <path d="M93 77h98" stroke="#d4a574" stroke-width="6" stroke-linecap="round" opacity=".65"/>
+  <path d="M430 324h105" stroke="#d4a574" stroke-width="6" stroke-linecap="round" opacity=".65"/>
+</svg>
