@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useApi } from '../hooks/useApi';
 
 function WaiterMenuManager() {
@@ -13,11 +13,8 @@ function WaiterMenuManager() {
     description: '',
   });
 
-  useEffect(() => {
-    fetchMenu();
-  }, []);
-
-  const fetchMenu = async () => {
+  // Wrapped in useCallback to prevent it from being recreated every render
+  const fetchMenu = useCallback(async () => {
     try {
       const data = await get('/menu');
       setMenu(Array.isArray(data) ? data : []);
@@ -26,7 +23,12 @@ function WaiterMenuManager() {
     } finally {
       setLoading(false);
     }
-  };
+  }, [get]);
+
+  // Now useEffect has fetchMenu in its dependency array
+  useEffect(() => {
+    fetchMenu();
+  }, [fetchMenu]);
 
   const handleAddMenu = async (e) => {
     e.preventDefault();
