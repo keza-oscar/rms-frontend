@@ -49,10 +49,9 @@ function Reservations() {
           <h1>MIDTOWN</h1>
         </div>
         <div className="nav-links">
-          <a onClick={() => navigate('/public/')}>Home</a>
-          <a onClick={() => navigate('/public/menu')}>Menu</a>
-          <a href="#reservations">Reserve</a>
-          <a onClick={() => navigate('/public/order')}>Order</a>
+          <button className="nav-link-btn" onClick={() => navigate('/public/')}>Home</button>
+          <button className="nav-link-btn" onClick={() => navigate('/public/menu')}>Menu</button>
+          <button className="nav-link-btn" onClick={() => navigate('/public/reservations')}>Reserve</button>
           <button className="btn-login" onClick={() => navigate('/login')}>Staff</button>
         </div>
       </nav>
